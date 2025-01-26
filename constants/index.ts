@@ -33,52 +33,28 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
+    skill_name: "Keras",
+    image: "keras.png",
+    width: 65,
+    height: 65,
+  },
+  {
     skill_name: "Matplotlib",
     image: "matplotlib.png",
-    width: 80,
-    height: 80,
+    width: 65,
+    height: 65,
+  },
+  {
+    skill_name: "Selinium",
+    image: "selinium.png",
+    width: 65,
+    height: 65,
   },
   {
     skill_name: "FastAPI",
     image: "fastapi.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Langchain",
-    image: "langchain.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "TypeScript",
-    image: "ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    image: "framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
 ] as const;
 
@@ -101,129 +77,87 @@ export const SOCIALS = [
 ] as const;
 
 export const FRONTEND_SKILL = [
-  {
-    skill_name: "PYTHON",
-    image: "python.png",
+    {
+    skill_name: "Airbyte",
+    image: "airbyte.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "JAVA",
-    image: "java.png",
+    skill_name: "Pinecone",
+    image: "pinecone.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "C++",
-    image: "cpp.png",
+    skill_name: "Choramadb",
+    image: "chromadb.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "C",
-    image: "c.png",
+    skill_name: "Milvus",
+    image: "milvus.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Material UI",
-    image: "mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "FLUTTER",
-    image: "flutter.png",
+    skill_name: "Deepseek",
+    image: "deepseek.png",
     width: 65,
     height: 65,
   },
   {
-    skill_name: "DART",
-    image: "dart.png",
+    skill_name: "Openai",
+    image: "openai.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "SWIFT",
-    image: "swift.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "ANDROID",
-    image: "android.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "ANDROID STUDIO",
-    image: "android-studio.png",
-    width: 80,
-    height: 80,
+    skill_name: "Anthropic",
+    image: "anthropiclogo.png",
+    width: 70,
+    height: 70,
   },
 ] as const;
 
 export const BACKEND_SKILL = [
   {
-    skill_name: "LINUX",
-    image: "linux.png",
+    skill_name: "Flawiseai",
+    image: "flawiseai.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Express.js",
-    image: "express.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "Firebase",
-    image: "firebase.png",
+    skill_name: "Langfuse",
+    image: "langfuse.png",
     width: 55,
     height: 55,
   },
   {
-    skill_name: "PostgreSQL",
-    image: "postgresql.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "MySQL",
-    image: "mysql.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Prisma",
-    image: "prisma.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Graphql",
-    image: "graphql.png",
+    skill_name: "Langchain",
+    image: "langchain.png",
     width: 80,
     height: 80,
+  },
+  {
+    skill_name: "Langgraph",
+    image: "langgraph.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Llamaindex",
+    image: "llamaindex.png",
+    width: 65,
+    height: 65,
   },
 ] as const;
 
 export const FULLSTACK_SKILL = [
   {
-    skill_name: "React Native",
-    image: "reactnative.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
+    skill_name: "LINUX",
+    image: "linux.png",
     width: 70,
     height: 70,
   },
@@ -232,20 +166,13 @@ export const FULLSTACK_SKILL = [
     image: "docker.png",
     width: 70,
     height: 70,
-  },
-
-  {
-    skill_name: "Figma",
-    image: "figma.png",
-    width: 50,
-    height: 50,
-  },
+  }
 ] as const;
 
 export const OTHER_SKILL = [
   {
-    skill_name: "Go",
-    image: "go.png",
+    skill_name: "Kubernatees",
+    image: "kubernatees.png",
     width: 60,
     height: 60,
   },
@@ -319,20 +246,15 @@ export const FOOTER_DATA = [
   {
     title: "About",
     data: [
-      {
-        name: "Become A Sponsor",
-        icon: null,
-        link: "https://buymeacoffee.com/rockstarpabitra",
-      },
-      {
+            {
         name: "Learning About Me",
         icon: null,
-        link: "https://explorecode.live/wiki/Pabitra_Banerjee",
+        link: "https://www.linkedin.com/in/azharthegeek/",
       },
       {
         name: "Contact Me",
         icon: null,
-        link: "https://explorecode.live/contact",
+        link: "https://wa.me/923120001547",
       },
     ],
   },

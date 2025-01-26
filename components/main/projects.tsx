@@ -28,7 +28,7 @@ export const Projects = () => {
 
       <motion.a
         variants={slideInFromLeft(1)}
-        href="https://pabitrabanerjee.me/All-My-Projects/" // Add the URL here
+        href="https://github.com/azharthegeek" // Add the URL here
         target="_blank" // Open the link in a new tab
         rel="noopener noreferrer" // Security measure to prevent the new page from accessing the window object
         className="py-2 px-6 mt-10 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]" // Added px-6 for horizontal padding and mt-10 for margin-top

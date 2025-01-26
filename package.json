@@ -1,5 +1,5 @@
 {
-  "name": "pabitra-banerjee",
+  "name": "muhammad-azhar",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "author": {
-    "name": "Pabitra Banerjee",
-    "email": "rockstarpabitra2204@gmail.com",
-    "url": "https://github.com/PB2204/Pabitra-Banerjee"
+    "name": "Muhammad Azhar",
+    "email": "azharthegeek@gmail.com",
+    "url": "https://github.com/azharthegeek"
   },
-  "description": "Welcome to my full stack Next.js 14 space portfolio.",
+  "description": "Welcome to my portfolio.",
   "keywords": [
     "reactjs",
     "nextjs",
@@ -48,23 +48,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PB2204/PB2204.github.io/Pabitra-Banerjee"
+    "url": "https://github.com/azharthegeek"
   },
-  "homepage": "https://github.com/PB2204/PB2204.github.io/Pabitra-Banerjee#readme",
-  "bugs": {
-    "url": "https://github.com/PB2204/PB2204.github.io/Pabitra-Banerjee/issues",
-    "email": "rockstarpabitra2204@gmail.com"
-  },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/RockstarPabitra"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/RockstarPabitra"
-    }
-  ],
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "@react-three/drei": "^9.93.0",
