@@ -86,17 +86,17 @@ export const SOCIALS = [
   {
     name: "Instagram",
     icon: RxInstagramLogo,
-    link: "https://instagram.com/coderpabitra",
+    link: "https://instagram.com/azharthegeek",
   },
   {
     name: "Facebook",
     icon: FaFacebook,
-    link: "https://facebook.com/Journalist.Pabitra.Banerjee",
+    link: "https://facebook.com/azharthegeek",
   },
   {
     name: "Twitter",
     icon: RxTwitterLogo,
-    link: "https://twitter.com/FossilianBhed",
+    link: "https://twitter.com/azharthegeek",
   },
 ] as const;
 
@@ -282,17 +282,17 @@ export const FOOTER_DATA = [
       {
         name: "YouTube",
         icon: FaYoutube,
-        link: "https://youtube.com/@The-AI-Band",
+        link: "https://youtube.com/@techshoor",
       },
       {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com/PB2204",
+        link: "https://github.com/azharthegeek",
       },
       {
         name: "Discord",
         icon: RxDiscordLogo,
-        link: "https://discord.gg/f7RVwJnsNt",
+        link: "https://discord.gg",
       },
     ],
   },
@@ -302,17 +302,17 @@ export const FOOTER_DATA = [
       {
         name: "Instagram",
         icon: RxInstagramLogo,
-        link: "https://instagram.com/coderpabitra",
+        link: "https://instagram.com/azharthegeek",
       },
       {
         name: "Twitter",
         icon: RxTwitterLogo,
-        link: "https://twitter.com/FossilianBhed",
+        link: "https://twitter.com/azharthegeek",
       },
       {
         name: "Linkedin",
         icon: RxLinkedinLogo,
-        link: "https://linkedin.com/pabitra-banerjee",
+        link: "https://linkedin.com/in/azharthegeek",
       },
     ],
   },
@@ -354,5 +354,5 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/PB2204/Pabitra-Banerjee",
+  sourceCode: "https://github.com/azharthegeek",
 };

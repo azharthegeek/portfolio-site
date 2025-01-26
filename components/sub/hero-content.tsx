@@ -24,7 +24,7 @@ export const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            AI Engineer
           </h1>
         </motion.div>
 
@@ -33,25 +33,24 @@ export const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Providing{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              the best
-            </span>{" "}
-            project experience.
-          </span>
+  Delivering{" "}
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+    exceptional
+  </span>{" "}
+  project experiences.
+</span>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack AI Engineer with experience in Website,
-          Android, AI-ML and Software Development. Check out my projects and skills.
+          A passionate AI Engineer dedicated to building impactful, scalable, and sustainable solutions. Explore my end-to-end AI projects and skills!
         </motion.p>
 
         <motion.a
           variants={slideInFromLeft(1)}
-          href="https://pabitrabanerjee.me/Dev-Portfolio/" // Add the URL here
+          href="https://www.linkedin.com/in/azharthegeek/" // Add the URL here
           target="_blank" // Open the link in a new tab
           rel="noopener noreferrer" // Security measure to prevent the new page from accessing the window object
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
