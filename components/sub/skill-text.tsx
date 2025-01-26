@@ -26,7 +26,7 @@ export const SkillText = () => {
         variants={slideInFromLeft(0.5)}
         className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
       >
-        Making Web-Apps, Android, IOS, Desktop(Windows, Linux, Mac), AI-ML Projects With Modern Technologies.
+        Making AI-ML Projects With Modern Technologies.
       </motion.div>
 
       <motion.div

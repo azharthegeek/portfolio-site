@@ -9,19 +9,19 @@ import {
 
 export const SKILL_DATA = [
   {
-    skill_name: "HTML",
-    image: "html.png",
+    skill_name: "Python",
+    image: "python.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "CSS",
-    image: "css.png",
+    skill_name: "Tensorflow",
+    image: "tensorflow.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "JavaScript",
+    skill_name: "OpenCV",
     image: "js.png",
     width: 65,
     height: 65,
@@ -39,14 +39,14 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
-    skill_name: "Redux",
-    image: "redux.png",
+    skill_name: "HTML",
+    image: "html.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "React Query",
-    image: "reactquery.png",
+    skill_name: "CSS",
+    image: "css.png",
     width: 80,
     height: 80,
   },
