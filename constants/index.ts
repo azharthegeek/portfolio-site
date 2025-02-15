@@ -178,27 +178,68 @@ export const OTHER_SKILL = [
   },
 ] as const;
 
+export const certifications = {
+  certifications: [
+    {
+      title: "AWS Machine Learning Foundations",
+      subtitle: "- Udacity Nanodegree Program Graduate",
+      logo_path: "Amazon_Web.png",
+      certificate_link: "https://graduation.udacity.com/confirm/XGD4VVRC",
+      alt_name: "Amazon Web Services",
+      color_code: "#8C151599",
+    },
+    // ... rest of your certificates array
+  ],
+} as const;
+
 export const PROJECTS = [
   {
-    title: "MathMania Android App",
-    description:
-      'Math Mania is a fun and educational math game designed to enhance your math skills through engaging and challenging puzzles. The app, built with Flutter using Dart, features three main categories: Math Puzzle, Memory Puzzle, and Train Your Brain. Each category includes unique games such as solving basic arithmetic equations, memorizing and calculating numbers, and enhancing logical thinking with puzzles like Magic Triangle and Number Pyramid. Developed by Pabitra Banerjee, a Full-Stack AI Engineer and tech enthusiast, Math Mania caters to all ages, offering a variety of math challenges that improve calculation speed, memory, and problem-solving skills while racing against time. Note: This app is intended for learning purposes only and is not for commercial use.',
+    title: "TechShoor Agri",
+    description: [
+      "Transforming data into profit, TechShoor Agri is an innovative platform aimed at optimizing agricultural techniques.",
+      "Key Features:",
+      "- Utilizes satellite imagery and deep learning models to provide AI-driven insights.",
+      "- Detects crop diseases and generates detailed land condition reports for farmers.",
+      "- Aims to increase agricultural yield, improve output quality, and enhance predictability using data-driven approaches.",
+      "Impact:",
+      "- Targets the agriculture sector, promoting local raw material utilization, employment, and skill development.",
+      "- Supports local manufacturing and service clusters while addressing current agricultural challenges.",
+      "- Offers potential for global market expansion, focusing on revenue generation and import substitution."
+    ],
     image: "/projects/project-1.png",
-    link: "https://www.amazon.in/dp/B0D7B2PR46",
+    link: "https://agri.techshoor.com/",
   },
   {
-    title: "EchoPlay Music Player",
-    description:
-      'EchoPlay is a comprehensive open-source music player app built with Flutter, designed to cater to all your music needs. It offers high-quality streaming at 320kbps aac, extensive search capabilities for songs, albums, artists, and playlists, and supports over 15 music languages. Users can enjoy trending songs, artist and genre radios, and local and global top Spotify tracks. Key features include playlist support with import/export options, sleep timer, lyrics, queue management, offline playback with download options, and an inbuilt equalizer. EchoPlay boasts customization with dark mode, accent colors, and custom gradients, all without subscriptions or ads. Additionally, it provides YouTube integration, auto song recommendations, and backup and restore functionality.',
+    title: "Python Course (PEPC)",
+    description: [
+      "A comprehensive 30+ hour Python course designed for beginners to intermediate learners.",
+      "Course Highlights:",
+      "- Live interactive Zoom classes led by experienced instructors.",
+      "- Access to recorded videos for flexible learning.",
+      "- Regular quizzes and assignments to reinforce understanding and apply knowledge.",
+      "- Comprehensive resources including slides, documentation, and a user-friendly portal.",
+      "Curriculum Overview:",
+      "- Covers Python fundamentals and modern programming concepts, including object-oriented programming.",
+      "- Divided into six modules with hands-on practice materials and real-world programming tasks.",
+      "- Prepares learners for high-paying job opportunities in the tech industry."
+    ],
     image: "/projects/project-2.png",
-    link: "https://files.fm/u/x78ay3x5cw",
+    link: "https://techshoor.com/courses/programming-essentials-in-python-course/",
   },
   {
-    title: "Interstellar Armada Game",
-    description:
-      'Interstellar Armada : Galactic Ace is a free, open-source 3D space combat simulator developed by Pabitra Banerjee using JavaScript-WebGL. Inspired by classic games like the FreeSpace series, it features mission-based gameplay with Newtonian mechanics for realistic movement. Designed for desktop but playable on mobile with touchscreen support, it includes a mission editor and an online mission sharing service. Currently in "early access," it can be played directly in a web browser, with best performance on Chrome/Chromium. Linux users can download an AppImage for offline play, while future Flatpak builds are planned. Developed using HTML, CSS, and JS, it supports mouse, keyboard, joystick, and gamepad inputs, with adjustable graphics settings for optimized performance.',
+    title: "Abnormality Detection",
+    description: [
+      "A cutting-edge solution for detecting abnormalities in musculoskeletal radiographs (MURA).",
+      "Key Insights:",
+      "- MURA is a large dataset of bone X-rays used to determine whether an X-ray study is normal or abnormal.",
+      "- Musculoskeletal conditions affect over 1.7 billion people globally, causing severe pain and disability.",
+      "Impact and Vision:",
+      "- Aims to revolutionize medical imaging technologies by enabling expert-level diagnostics.",
+      "- Addresses the shortage of skilled radiologists in underserved regions, improving healthcare access worldwide.",
+      "- Contributes to significant advancements in early detection and treatment of musculoskeletal disorders."
+    ],
     image: "/projects/project-3.png",
-    link: "https://pabitrabanerjee.me/Interstellar-Armada/",
+    link: "https://mediscan.techshoor.com/",
   },
 ] as const;
 

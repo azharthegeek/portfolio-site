@@ -1,9 +1,10 @@
 "use client";
 
 import { ProjectCard } from "@/components/sub/project-card";
-import { PROJECTS } from "@/constants";
+import {PROJECTS  } from "@/constants";
 import { motion } from "framer-motion";
 import { slideInFromLeft } from "@/lib/motion";
+
 
 export const Projects = () => {
   return (
