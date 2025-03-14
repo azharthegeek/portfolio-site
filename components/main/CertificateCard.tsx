@@ -10,6 +10,21 @@ type CertificateCardProps = {
   color_code: string;
 };
 
+export const certificatesData = {
+  certifications: [
+    {
+      title: "AWS Machine Learning Foundations",
+      subtitle: "- Udacity Nanodegree Program Graduate",
+      logo_path: "Amazon_Web.png",
+      certificate_link: "https://graduation.udacity.com/confirm/XGD4VVRC",
+      alt_name: "Amazon Web Services",
+      color_code: "#8C151599",
+    },
+    // ... rest of your certificates array
+  ],
+};
+
+
 export const CertificateCard = ({
   title,
   subtitle,
@@ -49,7 +64,7 @@ export const CertificatesContainer = () => {
   return (
     <div className="h-full w-full px-10">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {certifications.certifications.map((cert, index) => (
+        {certificatesData.certifications.map((cert, index) => (
           <CertificateCard
             key={index}
             title={cert.title}
@@ -63,19 +78,4 @@ export const CertificatesContainer = () => {
       </div>
     </div>
   );
-};
-
-// You can keep this export if you want to use it elsewhere
-export const certifications = {
-  certifications: [
-    {
-      title: "AWS Machine Learning Foundations",
-      subtitle: "- Udacity Nanodegree Program Graduate",
-      logo_path: "Amazon_Web.png",
-      certificate_link: "https://graduation.udacity.com/confirm/XGD4VVRC",
-      alt_name: "Amazon Web Services",
-      color_code: "#8C151599",
-    },
-    // ... rest of your certificates array
-  ],
 };

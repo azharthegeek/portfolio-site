@@ -21,7 +21,7 @@ export const Projects = () => {
             key={project.title}
             src={project.image}
             title={project.title}
-            description={project.description}
+            description={[...project.description]}
             link={project.link}
           />
         ))}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {PROJECTS  } from "@/constants";
 
 type ProjectCardProps = {
   src: string;
@@ -60,7 +61,7 @@ export const ProjectsContainer = () => {
             key={project.title}
             src={project.image}
             title={project.title}
-            description={project.description}
+            description={[...project.description]}
             link={project.link}
           />
         ))}
