@@ -20,7 +20,7 @@ export const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
@@ -33,19 +33,22 @@ export const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-  Delivering{" "}
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-    exceptional
-  </span>{" "}
-  project experiences.
-</span>
+            Building{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              intelligent systems
+            </span>{" "}
+            that drive 10x efficiency.
+          </span>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          A passionate AI Engineer dedicated to building impactful, scalable, and sustainable solutions. Explore my end-to-end AI projects and skills!
+          I'm an AI Engineer who loves turning complex challenges into practical solutions.
+          I develop and deploy AI models and APIs, including generative AI technologies,
+          boosting workflows by 10x with custom AI solutions. I'm passionate about helping
+          companies achieve AI-driven efficiency gains.
         </motion.p>
 
         <motion.a
@@ -55,7 +58,7 @@ export const HeroContent = () => {
           rel="noopener noreferrer" // Security measure to prevent the new page from accessing the window object
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Learn more
+          Let's Connect
         </motion.a>
       </div>
 
@@ -70,6 +73,8 @@ export const HeroContent = () => {
           width={650}
           draggable={false}
           className="select-none"
+          priority
+          sizes="(min-width: 1024px) 50vw, 100vw"
         />
       </motion.div>
     </motion.div>

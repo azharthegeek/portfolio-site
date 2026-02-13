@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
   title: "Muhammad Azhar | AI Engineer",
-  description: "Welcome to my portfolio.",
+  description:
+    "AI Engineer who builds and deploys AI models, APIs, and generative AI systems that deliver 10x workflow gains.",
   keywords: [
+    "ai engineer",
+    "machine learning",
+    "generative ai",
+    "llm",
+    "rag",
+    "ai api",
+    "computer vision",
     "reactjs",
     "nextjs",
     "vercel",
@@ -37,5 +45,17 @@ export const siteConfig: Metadata = {
   authors: {
     name: "Muhammad Azhar",
     url: "https://github.com/azharthegeek",
+  },
+  openGraph: {
+    title: "Muhammad Azhar | AI Engineer",
+    description:
+      "AI Engineer who builds and deploys AI models, APIs, and generative AI systems that deliver 10x workflow gains.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Muhammad Azhar | AI Engineer",
+    description:
+      "AI Engineer who builds and deploys AI models, APIs, and generative AI systems that deliver 10x workflow gains.",
   },
 } as const;

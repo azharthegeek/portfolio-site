@@ -1,11 +1,4 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
 
 export const SKILL_DATA = [
   {
@@ -15,7 +8,7 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
-    skill_name: "Tensorflow",
+    skill_name: "TensorFlow",
     image: "tensorflow.png",
     width: 80,
     height: 80,
@@ -45,7 +38,7 @@ export const SKILL_DATA = [
     height: 65,
   },
   {
-    skill_name: "Selinium",
+    skill_name: "Selenium",
     image: "selinium.png",
     width: 65,
     height: 65,
@@ -60,24 +53,24 @@ export const SKILL_DATA = [
 
 export const SOCIALS = [
   {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com/azharthegeek",
+    name: "LinkedIn",
+    icon: RxLinkedinLogo,
+    link: "https://linkedin.com/in/azharthegeek",
   },
   {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com/azharthegeek",
+    name: "GitHub",
+    icon: RxGithubLogo,
+    link: "https://github.com/azharthegeek",
   },
   {
-    name: "Twitter",
+    name: "Twitter/X",
     icon: RxTwitterLogo,
     link: "https://twitter.com/azharthegeek",
   },
 ] as const;
 
-export const FRONTEND_SKILL = [
-    {
+export const AI_TOOLS = [
+  {
     skill_name: "Airbyte",
     image: "airbyte.png",
     width: 80,
@@ -90,7 +83,7 @@ export const FRONTEND_SKILL = [
     height: 80,
   },
   {
-    skill_name: "Choramadb",
+    skill_name: "ChromaDB",
     image: "chromadb.png",
     width: 80,
     height: 80,
@@ -102,13 +95,13 @@ export const FRONTEND_SKILL = [
     height: 80,
   },
   {
-    skill_name: "Deepseek",
+    skill_name: "DeepSeek",
     image: "deepseek.png",
     width: 65,
     height: 65,
   },
   {
-    skill_name: "Openai",
+    skill_name: "OpenAI",
     image: "openai.png",
     width: 80,
     height: 80,
@@ -121,9 +114,9 @@ export const FRONTEND_SKILL = [
   },
 ] as const;
 
-export const BACKEND_SKILL = [
+export const AI_FRAMEWORKS = [
   {
-    skill_name: "Flawiseai",
+    skill_name: "FlowiseAI",
     image: "flawiseai.png",
     width: 80,
     height: 80,
@@ -135,28 +128,28 @@ export const BACKEND_SKILL = [
     height: 55,
   },
   {
-    skill_name: "Langchain",
+    skill_name: "LangChain",
     image: "langchain.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Langgraph",
+    skill_name: "LangGraph",
     image: "langgraph.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Llamaindex",
+    skill_name: "LlamaIndex",
     image: "llamaindex.png",
     width: 65,
     height: 65,
   },
 ] as const;
 
-export const FULLSTACK_SKILL = [
+export const DEVOPS_SKILL = [
   {
-    skill_name: "LINUX",
+    skill_name: "Linux",
     image: "linux.png",
     width: 70,
     height: 70,
@@ -166,45 +159,41 @@ export const FULLSTACK_SKILL = [
     image: "docker.png",
     width: 70,
     height: 70,
-  }
+  },
 ] as const;
 
 export const OTHER_SKILL = [
   {
-    skill_name: "Kubernatees",
+    skill_name: "Kubernetes",
     image: "kubernatees.png",
     width: 60,
     height: 60,
   },
 ] as const;
 
-export const certifications = {
-  certifications: [
-    {
-      title: "AWS Machine Learning Foundations",
-      subtitle: "- Udacity Nanodegree Program Graduate",
-      logo_path: "Amazon_Web.png",
-      certificate_link: "https://graduation.udacity.com/confirm/XGD4VVRC",
-      alt_name: "Amazon Web Services",
-      color_code: "#8C151599",
-    },
-    // ... rest of your certificates array
-  ],
-} as const;
+export const CERTIFICATIONS = [
+  {
+    title: "AWS Machine Learning Foundations",
+    subtitle: "Udacity Nanodegree Program Graduate",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "https://graduation.udacity.com/confirm/XGD4VVRC",
+    alt_name: "Amazon Web Services",
+    color_code: "#8C151599",
+  },
+] as const;
 
 export const PROJECTS = [
   {
     title: "TechShoor Agri",
     description: [
-      "Transforming data into profit, TechShoor Agri is an innovative platform aimed at optimizing agricultural techniques.",
+      "AI-powered platform for precision agriculture and yield optimization.",
       "Key Features:",
-      "- Utilizes satellite imagery and deep learning models to provide AI-driven insights.",
-      "- Detects crop diseases and generates detailed land condition reports for farmers.",
-      "- Aims to increase agricultural yield, improve output quality, and enhance predictability using data-driven approaches.",
+      "- Satellite imagery + deep learning for crop health monitoring.",
+      "- Disease detection and land condition insights for farmers.",
+      "- Actionable recommendations to improve yield and reduce waste.",
       "Impact:",
-      "- Targets the agriculture sector, promoting local raw material utilization, employment, and skill development.",
-      "- Supports local manufacturing and service clusters while addressing current agricultural challenges.",
-      "- Offers potential for global market expansion, focusing on revenue generation and import substitution."
+      "- Data-driven decision making for large and small farms.",
+      "- Scales insights across regions to improve food security."
     ],
     image: "/projects/project-1.png",
     link: "https://agri.techshoor.com/",
@@ -212,16 +201,11 @@ export const PROJECTS = [
   {
     title: "Python Course (PEPC)",
     description: [
-      "A comprehensive 30+ hour Python course designed for beginners to intermediate learners.",
+      "A 30+ hour Python program focused on AI-ready fundamentals and real projects.",
       "Course Highlights:",
-      "- Live interactive Zoom classes led by experienced instructors.",
-      "- Access to recorded videos for flexible learning.",
-      "- Regular quizzes and assignments to reinforce understanding and apply knowledge.",
-      "- Comprehensive resources including slides, documentation, and a user-friendly portal.",
-      "Curriculum Overview:",
-      "- Covers Python fundamentals and modern programming concepts, including object-oriented programming.",
-      "- Divided into six modules with hands-on practice materials and real-world programming tasks.",
-      "- Prepares learners for high-paying job opportunities in the tech industry."
+      "- Live sessions, recorded lessons, and applied assignments.",
+      "- Practice-driven curriculum with real-world problem solving.",
+      "- Guides learners toward ML-ready skills and career growth."
     ],
     image: "/projects/project-2.png",
     link: "https://techshoor.com/courses/programming-essentials-in-python-course/",
@@ -229,14 +213,13 @@ export const PROJECTS = [
   {
     title: "Abnormality Detection",
     description: [
-      "A cutting-edge solution for detecting abnormalities in musculoskeletal radiographs (MURA).",
+      "Deep learning pipeline for detecting abnormalities in musculoskeletal X-rays.",
       "Key Insights:",
-      "- MURA is a large dataset of bone X-rays used to determine whether an X-ray study is normal or abnormal.",
-      "- Musculoskeletal conditions affect over 1.7 billion people globally, causing severe pain and disability.",
-      "Impact and Vision:",
-      "- Aims to revolutionize medical imaging technologies by enabling expert-level diagnostics.",
-      "- Addresses the shortage of skilled radiologists in underserved regions, improving healthcare access worldwide.",
-      "- Contributes to significant advancements in early detection and treatment of musculoskeletal disorders."
+      "- Trained and evaluated on the MURA dataset for abnormality classification.",
+      "- Optimized inference for fast clinical triage and decision support.",
+      "Impact:",
+      "- Helps reduce diagnostic backlog and improve early detection.",
+      "- Scales expert-level insights to underserved regions."
     ],
     image: "/projects/project-3.png",
     link: "https://mediscan.techshoor.com/",
@@ -245,57 +228,62 @@ export const PROJECTS = [
 
 export const FOOTER_DATA = [
   {
-    title: "Community",
+    title: "Resources",
     data: [
-      {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com/@techshoor",
-      },
       {
         name: "GitHub",
         icon: RxGithubLogo,
         link: "https://github.com/azharthegeek",
       },
       {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.gg",
-      },
-    ],
-  },
-  {
-    title: "Social Media",
-    data: [
-      {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com/azharthegeek",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://twitter.com/azharthegeek",
-      },
-      {
-        name: "Linkedin",
+        name: "LinkedIn",
         icon: RxLinkedinLogo,
+        link: "https://linkedin.com/in/azharthegeek",
+      },
+      {
+        name: "Resume",
+        icon: null,
         link: "https://linkedin.com/in/azharthegeek",
       },
     ],
   },
   {
-    title: "About",
+    title: "Connect",
     data: [
-            {
-        name: "Learning About Me",
-        icon: null,
-        link: "https://www.linkedin.com/in/azharthegeek/",
+      {
+        name: "Twitter/X",
+        icon: RxTwitterLogo,
+        link: "https://twitter.com/azharthegeek",
       },
       {
-        name: "Contact Me",
+        name: "Email",
+        icon: null,
+        link: "mailto:azharthegeek@gmail.com",
+      },
+      {
+        name: "WhatsApp",
         icon: null,
         link: "https://wa.me/923120001547",
+      },
+    ],
+  },
+  {
+    title: "Portfolio",
+    data: [
+      {
+        name: "About Me",
+        icon: null,
+        link: "#about-me",
+      },
+      {
+        name: "Skills",
+        icon: null,
+        link: "#skills",
+      },
+      {
+        name: "Projects",
+        icon: null,
+        link: "#projects",
       },
     ],
   },
@@ -309,6 +297,10 @@ export const NAV_LINKS = [
   {
     title: "Skills",
     link: "#skills",
+  },
+  {
+    title: "Certifications",
+    link: "#certifications",
   },
   {
     title: "Projects",
