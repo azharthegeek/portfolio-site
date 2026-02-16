@@ -127,7 +127,7 @@ export const HeroContent = () => {
         >
           AI Engineer specializing in deep learning, generative AI, and production ML systems.
           I build and deploy AI models, RAG pipelines, and intelligent APIs that transform
-          how organizations operate — from satellite imagery analysis to medical imaging
+          how organizations operate - from satellite imagery analysis to medical imaging
           and NLP solutions.
         </motion.p>
 

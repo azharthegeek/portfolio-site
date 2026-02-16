@@ -32,7 +32,7 @@ export const SkillText = () => {
         className="text-base text-gray-400 mb-10 mt-[10px] text-center max-w-2xl leading-relaxed"
       >
         From model training and fine-tuning to cloud deployment and production
-        monitoring — the complete toolkit for building AI systems at scale.
+        monitoring - the complete toolkit for building AI systems at scale.
       </motion.div>
     </div>
   );
