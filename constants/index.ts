@@ -160,9 +160,6 @@ export const DEVOPS_SKILL = [
     width: 70,
     height: 70,
   },
-] as const;
-
-export const OTHER_SKILL = [
   {
     skill_name: "Kubernetes",
     image: "kubernatees.png",
@@ -171,14 +168,168 @@ export const OTHER_SKILL = [
   },
 ] as const;
 
-export const CERTIFICATIONS = [
+export const OTHER_SKILL = [
   {
-    title: "AWS Machine Learning Foundations",
-    subtitle: "Udacity Nanodegree Program Graduate",
+    skill_name: "Azure",
+    image: "azure.png",
+    width: 65,
+    height: 65,
+  },
+  {
+    skill_name: "AWS",
+    image: "aws.png",
+    width: 65,
+    height: 65,
+  },
+  {
+    skill_name: "Firebase",
+    image: "firebase.png",
+    width: 55,
+    height: 55,
+  },
+] as const;
+
+export const CERTIFICATIONS = [
+      {
+    title: "MLOps Specialization",
+    subtitle: "ML Engineering for Production",
     logo_path: "Amazon_Web.png",
-    certificate_link: "https://graduation.udacity.com/confirm/XGD4VVRC",
-    alt_name: "Amazon Web Services",
-    color_code: "#8C151599",
+    certificate_link: "#",
+    alt_name: "MLOps",
+    color_code: "#1a1a2e",
+    year: "2023",
+  },
+  {
+    title: "AWS Certified Cloud Practitioner",
+    subtitle: "Amazon Web Services",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "AWS",
+    color_code: "#1a1a2e",
+    year: "2022",
+  },
+  {
+    title: "Azure AI Fundamentals",
+    subtitle: "Microsoft Certified",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "Microsoft Azure AI",
+    color_code: "#1a1a2e",
+    year: "2021",
+  },
+  {
+    title: "Azure Data Fundamentals",
+    subtitle: "Microsoft Certified",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "Microsoft Azure Data",
+    color_code: "#1a1a2e",
+    year: "2021",
+  },
+  {
+    title: "MTA: Programming Using Python",
+    subtitle: "Microsoft Technology Associate",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "Microsoft Python",
+    color_code: "#1a1a2e",
+    year: "2020",
+  },
+  {
+    title: "MTA: Programming Using HTML & CSS",
+    subtitle: "Microsoft Technology Associate",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "Microsoft HTML CSS",
+    color_code: "#1a1a2e",
+    year: "2020",
+  },
+] as const;
+
+export const EXPERIENCE = [
+  {
+    role: "AI Engineer",
+    company: "Al Nafi",
+    period: "July 2024 – Present",
+    description:
+      "Developing and deploying AI models and APIs, boosting Alnafi's workflow by 10x with custom AI solutions. Building generative AI systems, RAG pipelines, and production-grade AI APIs.",
+    technologies: ["Python", "LangChain", "FastAPI", "OpenAI", "Docker", "Pinecone"],
+    current: true,
+  },
+  {
+    role: "Junior Lecturer",
+    company: "Institute of Business Management (IoBM)",
+    period: "Sep 2023 – Jan 2024",
+    description:
+      "Conducted courses in OOP, Data Structures & Algorithms, Computer Networks, and Programming Fundamentals. Developed lab manuals, supervised sessions, and led FYP groups introducing cutting-edge AI technologies.",
+    technologies: ["Python", "Java", "C++", "Data Structures", "Networking"],
+    current: false,
+  },
+  {
+    role: "Founder & AI Lead",
+    company: "TechShoor",
+    period: "Nov 2020 – Present",
+    description:
+      "Managed, created, and deployed AI models converted into production APIs. Served as Python Course Instructor for PEPC. Designed curriculum covering Python fundamentals and OOP concepts.",
+    technologies: ["Python", "TensorFlow", "FastAPI", "Docker", "Azure", "Firebase"],
+    current: true,
+  },
+  {
+    role: "Data Analyst",
+    company: "Unique Traders",
+    period: "Feb 2021 – Jun 2023",
+    description:
+      "Scraped customer data from Google Maps, developed and implemented databases. Built automated marketing message systems for client outreach.",
+    technologies: ["Python", "Selenium", "PostgreSQL", "Automation"],
+    current: false,
+  },
+] as const;
+
+export const EDUCATION = [
+  {
+    degree: "Master of Science in Artificial Intelligence",
+    shortDegree: "MS(AI)",
+    institution: "FAST NUCES, Karachi",
+    period: "Aug 2024 – Aug 2026",
+    current: true,
+  },
+  {
+    degree: "Bachelor of Science in Computer Science",
+    shortDegree: "BSCS",
+    institution: "Sindh Madressatul Islam University, Karachi",
+    period: "Aug 2019 – Aug 2023",
+    gpa: "CGPA 3.17",
+    current: false,
+    highlight: "Best Final Year Project (FYP) Award",
+  },
+  {
+    degree: "Diploma in Artificial Intelligence",
+    shortDegree: "AI Developer",
+    institution: "PIAIC – Presidential Initiative for AI & Computing",
+    period: "Apr 2019 – Aug 2021",
+    gpa: "Percentile 90.23",
+    current: false,
+  },
+] as const;
+
+export const PUBLICATIONS = [
+  {
+    title:
+      "Study on Reinforcement Learning and Deep Reinforcement Learning Schemes: A Review",
+    venue:
+      "Sir Syed University Research Journal of Engineering & Technology (SSURJET)",
+    authors:
+      "Muhammad Azhar, Mansoor Ahmed, Kamlesh Kumar, Mehar Khan Niazi, Muhammad Waqas",
+    status: "Published",
+    type: "journal",
+  },
+  {
+    title:
+      "Usage of Deep Learning Models in Agricultural Satellite Imagery, A Review",
+    venue: "Global Research Congress 2023 at SMIU Karachi",
+    authors: "Muhammad Azhar, Mansoor Ahmed Khuhro, Mehar Khan Niazi",
+    status: "Presented",
+    type: "conference",
   },
 ] as const;
 
@@ -193,37 +344,51 @@ export const PROJECTS = [
       "- Actionable recommendations to improve yield and reduce waste.",
       "Impact:",
       "- Data-driven decision making for large and small farms.",
-      "- Scales insights across regions to improve food security."
+      "- Scales insights across regions to improve food security.",
     ],
     image: "/projects/project-1.png",
     link: "https://agri.techshoor.com/",
+    technologies: ["Python", "TensorFlow", "FastAPI", "Docker", "Azure", "Rasterio"],
   },
   {
-    title: "Python Course (PEPC)",
-    description: [
-      "A 30+ hour Python program focused on AI-ready fundamentals and real projects.",
-      "Course Highlights:",
-      "- Live sessions, recorded lessons, and applied assignments.",
-      "- Practice-driven curriculum with real-world problem solving.",
-      "- Guides learners toward ML-ready skills and career growth."
-    ],
-    image: "/projects/project-2.png",
-    link: "https://techshoor.com/courses/programming-essentials-in-python-course/",
-  },
-  {
-    title: "Abnormality Detection",
+    title: "Fracture Detection (MURA)",
     description: [
       "Deep learning pipeline for detecting abnormalities in musculoskeletal X-rays.",
       "Key Insights:",
-      "- Trained and evaluated on the MURA dataset for abnormality classification.",
-      "- Optimized inference for fast clinical triage and decision support.",
+      "- Trained 7 categories using TensorFlow and PyTorch.",
+      "- Superior accuracy compared to existing models.",
+      "- Deployed on Azure VM with nginx for clinical use.",
       "Impact:",
       "- Helps reduce diagnostic backlog and improve early detection.",
-      "- Scales expert-level insights to underserved regions."
+      "- Scales expert-level insights to underserved regions.",
     ],
     image: "/projects/project-3.png",
     link: "https://mediscan.techshoor.com/",
+    technologies: ["Python", "TensorFlow", "PyTorch", "FastAPI", "Docker", "Azure"],
   },
+  {
+    title: "Semantic Analysis",
+    description: [
+      "Semantic analysis on Roman Urdu product reviews for enhanced understanding.",
+      "Key Features:",
+      "- NLP pipeline for Roman Urdu sentiment classification.",
+      "- Training with NLTK and Scikit-learn on custom datasets.",
+      "- Deployed using Django web framework.",
+      "Impact:",
+      "- Bridges the gap in Urdu-language NLP tools.",
+      "- Enables businesses to understand regional feedback.",
+    ],
+    image: "/projects/project-2.png",
+    link: "https://github.com/azharthegeek/sentiment-analysis-roman-urdu",
+    technologies: ["Python", "NLTK", "Scikit-learn", "Django"],
+  },
+] as const;
+
+export const STATS = [
+  { label: "AI Models Deployed", value: "150+" },
+  { label: "Years of Experience", value: "4+" },
+  { label: "Certifications", value: "25+" },
+  { label: "Research Papers", value: "2" },
 ] as const;
 
 export const FOOTER_DATA = [
@@ -241,9 +406,9 @@ export const FOOTER_DATA = [
         link: "https://linkedin.com/in/azharthegeek",
       },
       {
-        name: "Resume",
+        name: "Medium",
         icon: null,
-        link: "https://linkedin.com/in/azharthegeek",
+        link: "https://azharthegeek.medium.com",
       },
     ],
   },
@@ -261,9 +426,9 @@ export const FOOTER_DATA = [
         link: "mailto:azharthegeek@gmail.com",
       },
       {
-        name: "WhatsApp",
+        name: "YouTube",
         icon: null,
-        link: "https://wa.me/923120001547",
+        link: "https://youtube.com/@TechShoor",
       },
     ],
   },
@@ -276,9 +441,9 @@ export const FOOTER_DATA = [
         link: "#about-me",
       },
       {
-        name: "Skills",
+        name: "Experience",
         icon: null,
-        link: "#skills",
+        link: "#experience",
       },
       {
         name: "Projects",
@@ -291,7 +456,7 @@ export const FOOTER_DATA = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "About",
     link: "#about-me",
   },
   {
@@ -299,12 +464,16 @@ export const NAV_LINKS = [
     link: "#skills",
   },
   {
-    title: "Certifications",
-    link: "#certifications",
+    title: "Experience",
+    link: "#experience",
   },
   {
     title: "Projects",
     link: "#projects",
+  },
+  {
+    title: "Publications",
+    link: "#publications",
   },
 ] as const;
 

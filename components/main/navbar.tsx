@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
 
@@ -15,19 +16,19 @@ export const Navbar = () => {
       <div className="w-full h-[65px] flex flex-row items-center justify-between m-auto px-[10px]">
         <Link
           href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
+          className="h-auto w-auto flex flex-row items-center justify-center"
         >
-          <Image
-            src="/logo.png"
-            alt="Logo"
-            width={70}
-            height={70}
-            draggable={false}
-            className="cursor-pointer hover:animate-slowspin"
-            priority
-            sizes="70px"
-          />
-          <div className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <motion.div
+            className="font-bold bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent bg-size-200 text-lg md:text-xl"
+            animate={{ backgroundPosition: ["0%", "100%", "0%"] }}
+            transition={{ duration: 4, repeat: Infinity }}
+            style={{
+              backgroundSize: "200% 200%",
+            }}
+          >
+            MA
+          </motion.div>
+          <div className="font-bold ml-[8px] hidden md:block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-cyan-300">
             Muhammad Azhar
           </div>
         </Link>
