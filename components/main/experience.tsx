@@ -48,7 +48,7 @@ export const Experience = () => {
           Professional Experience
         </h2>
         <p className="text-gray-300 mt-4">
-          From data analysis to AI engineering — a path forged through building,
+          From data analysis to AI engineering - a path forged through building,
           deploying, and teaching intelligent systems.
         </p>
       </div>
