@@ -1,11 +1,4 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
 
 export const SKILL_DATA = [
   {
@@ -15,7 +8,7 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
-    skill_name: "Tensorflow",
+    skill_name: "TensorFlow",
     image: "tensorflow.png",
     width: 80,
     height: 80,
@@ -45,7 +38,7 @@ export const SKILL_DATA = [
     height: 65,
   },
   {
-    skill_name: "Selinium",
+    skill_name: "Selenium",
     image: "selinium.png",
     width: 65,
     height: 65,
@@ -60,24 +53,24 @@ export const SKILL_DATA = [
 
 export const SOCIALS = [
   {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com/azharthegeek",
+    name: "LinkedIn",
+    icon: RxLinkedinLogo,
+    link: "https://linkedin.com/in/azharthegeek",
   },
   {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com/azharthegeek",
+    name: "GitHub",
+    icon: RxGithubLogo,
+    link: "https://github.com/azharthegeek",
   },
   {
-    name: "Twitter",
+    name: "Twitter/X",
     icon: RxTwitterLogo,
     link: "https://twitter.com/azharthegeek",
   },
 ] as const;
 
-export const FRONTEND_SKILL = [
-    {
+export const AI_TOOLS = [
+  {
     skill_name: "Airbyte",
     image: "airbyte.png",
     width: 80,
@@ -90,7 +83,7 @@ export const FRONTEND_SKILL = [
     height: 80,
   },
   {
-    skill_name: "Choramadb",
+    skill_name: "ChromaDB",
     image: "chromadb.png",
     width: 80,
     height: 80,
@@ -102,13 +95,13 @@ export const FRONTEND_SKILL = [
     height: 80,
   },
   {
-    skill_name: "Deepseek",
+    skill_name: "DeepSeek",
     image: "deepseek.png",
     width: 65,
     height: 65,
   },
   {
-    skill_name: "Openai",
+    skill_name: "OpenAI",
     image: "openai.png",
     width: 80,
     height: 80,
@@ -121,9 +114,9 @@ export const FRONTEND_SKILL = [
   },
 ] as const;
 
-export const BACKEND_SKILL = [
+export const AI_FRAMEWORKS = [
   {
-    skill_name: "Flawiseai",
+    skill_name: "FlowiseAI",
     image: "flawiseai.png",
     width: 80,
     height: 80,
@@ -135,28 +128,28 @@ export const BACKEND_SKILL = [
     height: 55,
   },
   {
-    skill_name: "Langchain",
+    skill_name: "LangChain",
     image: "langchain.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Langgraph",
+    skill_name: "LangGraph",
     image: "langgraph.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Llamaindex",
+    skill_name: "LlamaIndex",
     image: "llamaindex.png",
     width: 65,
     height: 65,
   },
 ] as const;
 
-export const FULLSTACK_SKILL = [
+export const DEVOPS_SKILL = [
   {
-    skill_name: "LINUX",
+    skill_name: "Linux",
     image: "linux.png",
     width: 70,
     height: 70,
@@ -166,136 +159,296 @@ export const FULLSTACK_SKILL = [
     image: "docker.png",
     width: 70,
     height: 70,
-  }
-] as const;
-
-export const OTHER_SKILL = [
+  },
   {
-    skill_name: "Kubernatees",
+    skill_name: "Kubernetes",
     image: "kubernatees.png",
     width: 60,
     height: 60,
   },
 ] as const;
 
-export const certifications = {
-  certifications: [
-    {
-      title: "AWS Machine Learning Foundations",
-      subtitle: "- Udacity Nanodegree Program Graduate",
-      logo_path: "Amazon_Web.png",
-      certificate_link: "https://graduation.udacity.com/confirm/XGD4VVRC",
-      alt_name: "Amazon Web Services",
-      color_code: "#8C151599",
-    },
-    // ... rest of your certificates array
-  ],
-} as const;
+export const OTHER_SKILL = [
+  {
+    skill_name: "Azure",
+    image: "azure.png",
+    width: 65,
+    height: 65,
+  },
+  {
+    skill_name: "AWS",
+    image: "aws.png",
+    width: 65,
+    height: 65,
+  },
+  {
+    skill_name: "Firebase",
+    image: "firebase.png",
+    width: 55,
+    height: 55,
+  },
+] as const;
+
+export const CERTIFICATIONS = [
+      {
+    title: "MLOps Specialization",
+    subtitle: "ML Engineering for Production",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "MLOps",
+    color_code: "#1a1a2e",
+    year: "2023",
+  },
+  {
+    title: "AWS Certified Cloud Practitioner",
+    subtitle: "Amazon Web Services",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "AWS",
+    color_code: "#1a1a2e",
+    year: "2022",
+  },
+  {
+    title: "Azure AI Fundamentals",
+    subtitle: "Microsoft Certified",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "Microsoft Azure AI",
+    color_code: "#1a1a2e",
+    year: "2021",
+  },
+  {
+    title: "Azure Data Fundamentals",
+    subtitle: "Microsoft Certified",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "Microsoft Azure Data",
+    color_code: "#1a1a2e",
+    year: "2021",
+  },
+  {
+    title: "MTA: Programming Using Python",
+    subtitle: "Microsoft Technology Associate",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "Microsoft Python",
+    color_code: "#1a1a2e",
+    year: "2020",
+  },
+  {
+    title: "MTA: Programming Using HTML & CSS",
+    subtitle: "Microsoft Technology Associate",
+    logo_path: "Amazon_Web.png",
+    certificate_link: "#",
+    alt_name: "Microsoft HTML CSS",
+    color_code: "#1a1a2e",
+    year: "2020",
+  },
+] as const;
+
+export const EXPERIENCE = [
+  {
+    role: "AI Engineer",
+    company: "Al Nafi",
+    period: "July 2024 – Present",
+    description:
+      "Developing and deploying AI models and APIs, boosting Alnafi's workflow by 10x with custom AI solutions. Building generative AI systems, RAG pipelines, and production-grade AI APIs.",
+    technologies: ["Python", "LangChain", "FastAPI", "OpenAI", "Docker", "Pinecone"],
+    current: true,
+  },
+  {
+    role: "Junior Lecturer",
+    company: "Institute of Business Management (IoBM)",
+    period: "Sep 2023 – Jan 2024",
+    description:
+      "Conducted courses in OOP, Data Structures & Algorithms, Computer Networks, and Programming Fundamentals. Developed lab manuals, supervised sessions, and led FYP groups introducing cutting-edge AI technologies.",
+    technologies: ["Python", "Java", "C++", "Data Structures", "Networking"],
+    current: false,
+  },
+  {
+    role: "Founder & AI Lead",
+    company: "TechShoor",
+    period: "Nov 2020 – Present",
+    description:
+      "Managed, created, and deployed AI models converted into production APIs. Served as Python Course Instructor for PEPC. Designed curriculum covering Python fundamentals and OOP concepts.",
+    technologies: ["Python", "TensorFlow", "FastAPI", "Docker", "Azure", "Firebase"],
+    current: true,
+  },
+  {
+    role: "Data Analyst",
+    company: "Unique Traders",
+    period: "Feb 2021 – Jun 2023",
+    description:
+      "Scraped customer data from Google Maps, developed and implemented databases. Built automated marketing message systems for client outreach.",
+    technologies: ["Python", "Selenium", "PostgreSQL", "Automation"],
+    current: false,
+  },
+] as const;
+
+export const EDUCATION = [
+  {
+    degree: "Master of Science in Artificial Intelligence",
+    shortDegree: "MS(AI)",
+    institution: "FAST NUCES, Karachi",
+    period: "Aug 2024 – Aug 2026",
+    current: true,
+  },
+  {
+    degree: "Bachelor of Science in Computer Science",
+    shortDegree: "BSCS",
+    institution: "Sindh Madressatul Islam University, Karachi",
+    period: "Aug 2019 – Aug 2023",
+    gpa: "CGPA 3.17",
+    current: false,
+    highlight: "Best Final Year Project (FYP) Award",
+  },
+  {
+    degree: "Diploma in Artificial Intelligence",
+    shortDegree: "AI Developer",
+    institution: "PIAIC – Presidential Initiative for AI & Computing",
+    period: "Apr 2019 – Aug 2021",
+    gpa: "Percentile 90.23",
+    current: false,
+  },
+] as const;
+
+export const PUBLICATIONS = [
+  {
+    title:
+      "Study on Reinforcement Learning and Deep Reinforcement Learning Schemes: A Review",
+    venue:
+      "Sir Syed University Research Journal of Engineering & Technology (SSURJET)",
+    authors:
+      "Muhammad Azhar, Mansoor Ahmed, Kamlesh Kumar, Mehar Khan Niazi, Muhammad Waqas",
+    status: "Published",
+    type: "journal",
+  },
+  {
+    title:
+      "Usage of Deep Learning Models in Agricultural Satellite Imagery, A Review",
+    venue: "Global Research Congress 2023 at SMIU Karachi",
+    authors: "Muhammad Azhar, Mansoor Ahmed Khuhro, Mehar Khan Niazi",
+    status: "Presented",
+    type: "conference",
+  },
+] as const;
 
 export const PROJECTS = [
   {
     title: "TechShoor Agri",
     description: [
-      "Transforming data into profit, TechShoor Agri is an innovative platform aimed at optimizing agricultural techniques.",
+      "AI-powered platform for precision agriculture and yield optimization.",
       "Key Features:",
-      "- Utilizes satellite imagery and deep learning models to provide AI-driven insights.",
-      "- Detects crop diseases and generates detailed land condition reports for farmers.",
-      "- Aims to increase agricultural yield, improve output quality, and enhance predictability using data-driven approaches.",
+      "- Satellite imagery + deep learning for crop health monitoring.",
+      "- Disease detection and land condition insights for farmers.",
+      "- Actionable recommendations to improve yield and reduce waste.",
       "Impact:",
-      "- Targets the agriculture sector, promoting local raw material utilization, employment, and skill development.",
-      "- Supports local manufacturing and service clusters while addressing current agricultural challenges.",
-      "- Offers potential for global market expansion, focusing on revenue generation and import substitution."
+      "- Data-driven decision making for large and small farms.",
+      "- Scales insights across regions to improve food security.",
     ],
     image: "/projects/project-1.png",
     link: "https://agri.techshoor.com/",
+    technologies: ["Python", "TensorFlow", "FastAPI", "Docker", "Azure", "Rasterio"],
   },
   {
-    title: "Python Course (PEPC)",
+    title: "Fracture Detection (MURA)",
     description: [
-      "A comprehensive 30+ hour Python course designed for beginners to intermediate learners.",
-      "Course Highlights:",
-      "- Live interactive Zoom classes led by experienced instructors.",
-      "- Access to recorded videos for flexible learning.",
-      "- Regular quizzes and assignments to reinforce understanding and apply knowledge.",
-      "- Comprehensive resources including slides, documentation, and a user-friendly portal.",
-      "Curriculum Overview:",
-      "- Covers Python fundamentals and modern programming concepts, including object-oriented programming.",
-      "- Divided into six modules with hands-on practice materials and real-world programming tasks.",
-      "- Prepares learners for high-paying job opportunities in the tech industry."
-    ],
-    image: "/projects/project-2.png",
-    link: "https://techshoor.com/courses/programming-essentials-in-python-course/",
-  },
-  {
-    title: "Abnormality Detection",
-    description: [
-      "A cutting-edge solution for detecting abnormalities in musculoskeletal radiographs (MURA).",
+      "Deep learning pipeline for detecting abnormalities in musculoskeletal X-rays.",
       "Key Insights:",
-      "- MURA is a large dataset of bone X-rays used to determine whether an X-ray study is normal or abnormal.",
-      "- Musculoskeletal conditions affect over 1.7 billion people globally, causing severe pain and disability.",
-      "Impact and Vision:",
-      "- Aims to revolutionize medical imaging technologies by enabling expert-level diagnostics.",
-      "- Addresses the shortage of skilled radiologists in underserved regions, improving healthcare access worldwide.",
-      "- Contributes to significant advancements in early detection and treatment of musculoskeletal disorders."
+      "- Trained 7 categories using TensorFlow and PyTorch.",
+      "- Superior accuracy compared to existing models.",
+      "- Deployed on Azure VM with nginx for clinical use.",
+      "Impact:",
+      "- Helps reduce diagnostic backlog and improve early detection.",
+      "- Scales expert-level insights to underserved regions.",
     ],
     image: "/projects/project-3.png",
     link: "https://mediscan.techshoor.com/",
+    technologies: ["Python", "TensorFlow", "PyTorch", "FastAPI", "Docker", "Azure"],
   },
+  {
+    title: "Semantic Analysis",
+    description: [
+      "Semantic analysis on Roman Urdu product reviews for enhanced understanding.",
+      "Key Features:",
+      "- NLP pipeline for Roman Urdu sentiment classification.",
+      "- Training with NLTK and Scikit-learn on custom datasets.",
+      "- Deployed using Django web framework.",
+      "Impact:",
+      "- Bridges the gap in Urdu-language NLP tools.",
+      "- Enables businesses to understand regional feedback.",
+    ],
+    image: "/projects/project-2.png",
+    link: "https://github.com/azharthegeek/sentiment-analysis-roman-urdu",
+    technologies: ["Python", "NLTK", "Scikit-learn", "Django"],
+  },
+] as const;
+
+export const STATS = [
+  { label: "AI Models Deployed", value: "150+" },
+  { label: "Years of Experience", value: "4+" },
+  { label: "Certifications", value: "25+" },
+  { label: "Research Papers", value: "2" },
 ] as const;
 
 export const FOOTER_DATA = [
   {
-    title: "Community",
+    title: "Resources",
     data: [
-      {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com/@techshoor",
-      },
       {
         name: "GitHub",
         icon: RxGithubLogo,
         link: "https://github.com/azharthegeek",
       },
       {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.gg",
+        name: "LinkedIn",
+        icon: RxLinkedinLogo,
+        link: "https://linkedin.com/in/azharthegeek",
+      },
+      {
+        name: "Medium",
+        icon: null,
+        link: "https://azharthegeek.medium.com",
       },
     ],
   },
   {
-    title: "Social Media",
+    title: "Connect",
     data: [
       {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com/azharthegeek",
-      },
-      {
-        name: "Twitter",
+        name: "Twitter/X",
         icon: RxTwitterLogo,
         link: "https://twitter.com/azharthegeek",
       },
       {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com/in/azharthegeek",
+        name: "Email",
+        icon: null,
+        link: "mailto:azharthegeek@gmail.com",
+      },
+      {
+        name: "YouTube",
+        icon: null,
+        link: "https://youtube.com/@TechShoor",
       },
     ],
   },
   {
-    title: "About",
+    title: "Portfolio",
     data: [
-            {
-        name: "Learning About Me",
+      {
+        name: "About Me",
         icon: null,
-        link: "https://www.linkedin.com/in/azharthegeek/",
+        link: "#about-me",
       },
       {
-        name: "Contact Me",
+        name: "Experience",
         icon: null,
-        link: "https://wa.me/923120001547",
+        link: "#experience",
+      },
+      {
+        name: "Projects",
+        icon: null,
+        link: "#projects",
       },
     ],
   },
@@ -303,7 +456,7 @@ export const FOOTER_DATA = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "About",
     link: "#about-me",
   },
   {
@@ -311,8 +464,16 @@ export const NAV_LINKS = [
     link: "#skills",
   },
   {
+    title: "Experience",
+    link: "#experience",
+  },
+  {
     title: "Projects",
     link: "#projects",
+  },
+  {
+    title: "Publications",
+    link: "#publications",
   },
 ] as const;
 
