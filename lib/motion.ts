@@ -41,32 +41,4 @@ export const slideInFromTop = {
   },
 };
 
-export function fadeInUp(delay: number = 0) {
-  return {
-    hidden: { y: 40, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        delay,
-        duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1],
-      },
-    },
-  };
-}
 
-export function scaleIn(delay: number = 0) {
-  return {
-    hidden: { scale: 0.8, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        delay,
-        duration: 0.5,
-        ease: [0.25, 0.1, 0.25, 1],
-      },
-    },
-  };
-}

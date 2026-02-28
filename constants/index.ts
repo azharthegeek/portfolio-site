@@ -322,6 +322,7 @@ export const PUBLICATIONS = [
       "Muhammad Azhar, Mansoor Ahmed, Kamlesh Kumar, Mehar Khan Niazi, Muhammad Waqas",
     status: "Published",
     type: "journal",
+    link: "https://ssurj.edu.pk/index.php/ssurjet", // Update with specific DOI when available
   },
   {
     title:
@@ -330,6 +331,7 @@ export const PUBLICATIONS = [
     authors: "Muhammad Azhar, Mansoor Ahmed Khuhro, Mehar Khan Niazi",
     status: "Presented",
     type: "conference",
+    link: "https://www.smiu.edu.pk", // Update with conference proceedings link when available
   },
 ] as const;
 
@@ -472,8 +474,8 @@ export const NAV_LINKS = [
     link: "#projects",
   },
   {
-    title: "Publications",
-    link: "#publications",
+    title: "Contact",
+    link: "#contact",
   },
 ] as const;
 

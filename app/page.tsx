@@ -1,5 +1,7 @@
 import { AIServices } from "@/components/main/ai-services";
+import { Blog } from "@/components/main/blog";
 import { CertificatesContainer } from "@/components/main/CertificateCard";
+import { Contact } from "@/components/main/contact";
 import { Education } from "@/components/main/education";
 import { Experience } from "@/components/main/experience";
 import { Hero } from "@/components/main/hero";
@@ -41,6 +43,14 @@ export default function Home() {
         <div className="w-full h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent" />
 
         <Publications />
+
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent" />
+
+        <Blog />
+
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent" />
+
+        <Contact />
       </div>
     </main>
   );

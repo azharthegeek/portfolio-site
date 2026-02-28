@@ -51,7 +51,7 @@ export const SkillDataProvider = ({
           className="transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-5 whitespace-nowrap">
+      <span className="text-xs text-gray-400 transition-colors duration-300 group-hover:text-purple-400 text-center whitespace-nowrap">
         {name}
       </span>
     </motion.div>

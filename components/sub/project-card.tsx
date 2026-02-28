@@ -40,9 +40,9 @@ export const ProjectCard = ({
       </div>
 
       <div className="relative p-5 space-y-3">
-        <h1 className="text-2xl font-semibold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">
+        <h3 className="text-2xl font-semibold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">
           {title}
-        </h1>
+        </h3>
         <div className="mt-2 text-gray-300 text-sm space-y-1.5">
           {description.map((text, index) =>
             text.startsWith("-") ? (

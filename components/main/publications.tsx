@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaBookOpen, FaMicrophoneAlt } from "react-icons/fa";
+import { FaBookOpen, FaMicrophoneAlt, FaExternalLinkAlt } from "react-icons/fa";
+import Link from "next/link";
 
 import { PUBLICATIONS } from "@/constants";
 
@@ -97,6 +98,16 @@ export const Publications = () => {
                   <span className="text-gray-500">Authors: </span>
                   {pub.authors}
                 </p>
+
+                <Link
+                  href={pub.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-4 px-4 py-2 text-sm font-medium text-purple-300 border border-purple-500/30 rounded-lg hover:bg-purple-500/10 hover:border-purple-400/50 transition-all duration-300 group"
+                >
+                  View Paper
+                  <FaExternalLinkAlt className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
               </div>
             </div>
           </motion.div>
