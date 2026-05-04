@@ -138,13 +138,13 @@ export const HeroContent = () => {
             href="https://www.linkedin.com/in/azharthegeek/"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-2.5 px-6 button-primary text-center text-white cursor-pointer rounded-lg font-medium transition-all duration-300 hover:scale-105"
+            className="w-full sm:w-auto py-2.5 px-6 button-primary text-center text-white cursor-pointer rounded-lg font-medium transition-all duration-300 hover:scale-105"
           >
             Let&apos;s Connect
           </a>
           <a
             href="mailto:azharthegeek@gmail.com"
-            className="py-2.5 px-6 border border-purple-500/40 text-center text-purple-200 cursor-pointer rounded-lg font-medium transition-all duration-300 hover:border-purple-400 hover:bg-purple-500/10 hover:scale-105"
+            className="w-full sm:w-auto py-2.5 px-6 border border-purple-500/40 text-center text-purple-200 cursor-pointer rounded-lg font-medium transition-all duration-300 hover:border-purple-400 hover:bg-purple-500/10 hover:scale-105"
           >
             Get In Touch
           </a>
@@ -152,7 +152,7 @@ export const HeroContent = () => {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-2.5 px-6 border border-cyan-500/40 text-center text-cyan-200 cursor-pointer rounded-lg font-medium transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-500/10 hover:scale-105 flex items-center gap-2"
+            className="w-full sm:w-auto py-2.5 px-6 border border-cyan-500/40 text-center text-cyan-200 cursor-pointer rounded-lg font-medium transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-500/10 hover:scale-105 flex items-center justify-center gap-2"
           >
             <FaDownload className="h-3.5 w-3.5" />
             Resume
@@ -162,7 +162,7 @@ export const HeroContent = () => {
         {/* Stats bar */}
         <motion.div
           variants={slideInFromLeft(1.2)}
-          className="flex flex-wrap gap-6 md:gap-10 mt-8 pt-8 border-t border-white/10"
+          className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-10 mt-8 pt-8 border-t border-white/10"
         >
           {STATS.map((stat) => (
             <div key={stat.label} className="flex flex-col">

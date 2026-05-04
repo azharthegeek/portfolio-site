@@ -11,6 +11,7 @@ import {
   FaExclamationCircle,
 } from "react-icons/fa";
 
+import { SectionHeader } from "@/components/sub/section-header";
 import { slideInFromLeft, slideInFromRight } from "@/lib/motion";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpwzgvkn"; // Replace with your Formspree form ID
@@ -60,21 +61,12 @@ export const Contact = () => {
       className="flex flex-col items-center justify-center py-20 px-6"
       aria-labelledby="contact-title"
     >
-      <div className="text-center max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.3em] text-purple-300">
-          Get In Touch
-        </p>
-        <h2
-          id="contact-title"
-          className="text-[36px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mt-4"
-        >
-          Contact Me
-        </h2>
-        <p className="text-gray-300 mt-4">
-          Have a project in mind or want to collaborate? I&apos;d love to hear
-          from you. Reach out and let&apos;s build something amazing together.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="Get In Touch"
+        title="Contact Me"
+        titleId="contact-title"
+        description="Have a project in mind or want to collaborate? I'd love to hear from you. Reach out and let's build something amazing together."
+      />
 
       <div className="mt-12 w-full max-w-5xl grid grid-cols-1 lg:grid-cols-5 gap-8">
         {/* Contact Info */}

@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -8,6 +11,7 @@ type ProjectCardProps = {
   description: string[];
   link: string;
   technologies?: string[];
+  category?: string;
 };
 
 export const ProjectCard = ({
@@ -16,6 +20,7 @@ export const ProjectCard = ({
   description,
   link,
   technologies,
+  category,
 }: ProjectCardProps) => {
   return (
     <Link
@@ -33,9 +38,24 @@ export const ProjectCard = ({
           sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0f0b1f] via-transparent to-transparent opacity-60" />
+        {/* Better gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0f0b1f] via-[#0f0b1f]/30 to-transparent group-hover:via-[#0f0b1f]/10 transition-all duration-300" />
+
+        {/* Category badge */}
+        {category && (
+          <div className="absolute top-3 left-3 px-2.5 py-1 text-xs font-medium rounded-full bg-[#030014]/70 border border-cyan-500/30 text-cyan-300 backdrop-blur-sm">
+            {category}
+          </div>
+        )}
+
+        {/* External link icon */}
         <div className="absolute top-3 right-3 p-2 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <FaExternalLinkAlt className="h-3 w-3" />
+        </div>
+
+        {/* Hover reveal strip */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-purple-600/80 to-cyan-600/80 backdrop-blur-sm py-2.5 px-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center gap-2 text-white text-sm font-medium">
+          View Project <FaExternalLinkAlt className="h-3 w-3" />
         </div>
       </div>
 
@@ -67,12 +87,14 @@ export const ProjectCard = ({
         {technologies && technologies.length > 0 && (
           <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
             {technologies.map((tech) => (
-              <span
+              <motion.span
                 key={tech}
-                className="px-2 py-0.5 text-xs rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300"
+                whileHover={{ scale: 1.1, y: -2 }}
+                transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                className="px-2 py-0.5 text-xs rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 cursor-default"
               >
                 {tech}
-              </span>
+              </motion.span>
             ))}
           </div>
         )}

@@ -29,6 +29,16 @@ const StarsCanvas = dynamic(() => import("@/components/main/star-background"), {
   loading: () => <div className="w-full h-full fixed inset-0 -z-10" />,
 });
 
+const LoadingScreen = dynamic(
+  () => import("@/components/main/loading-screen").then((m) => ({ default: m.LoadingScreen })),
+  { ssr: false }
+);
+
+const CursorGlow = dynamic(
+  () => import("@/components/sub/cursor-glow").then((m) => ({ default: m.CursorGlow })),
+  { ssr: false }
+);
+
 export const viewport: Viewport = {
   themeColor: "#030014",
 };
@@ -56,6 +66,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
         >
           Skip to main content
         </a>
+        <LoadingScreen />
+        <CursorGlow />
         <StarsCanvas />
         <Navbar />
         <div id="main-content">{children}</div>

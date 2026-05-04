@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaBookOpen, FaMicrophoneAlt, FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
 
+import { SectionHeader } from "@/components/sub/section-header";
 import { PUBLICATIONS } from "@/constants";
 
 const container = {
@@ -26,21 +27,12 @@ export const Publications = () => {
       className="flex flex-col items-center justify-center py-20 px-6"
       aria-labelledby="publications-title"
     >
-      <div className="text-center max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.3em] text-purple-300">
-          Research Work
-        </p>
-        <h2
-          id="publications-title"
-          className="text-[36px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mt-4"
-        >
-          Publications & Research
-        </h2>
-        <p className="text-gray-300 mt-4">
-          Peer-reviewed research contributions in AI, deep learning, and
-          reinforcement learning.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="Research Work"
+        title="Publications & Research"
+        titleId="publications-title"
+        description="Peer-reviewed research contributions in AI, deep learning, and reinforcement learning."
+      />
 
       <motion.div
         variants={container}

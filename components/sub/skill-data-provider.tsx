@@ -40,7 +40,7 @@ export const SkillDataProvider = ({
       transition={{ delay: index * animationDelay, duration: 0.4 }}
       className="group relative flex flex-col items-center gap-2"
     >
-      <div className="relative p-3 rounded-xl transition-all duration-300 group-hover:bg-purple-500/10 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.15)]">
+      <div className="relative p-3 rounded-xl transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-purple-500/10 group-hover:to-cyan-500/5 group-hover:shadow-[0_0_20px_rgba(112,66,248,0.3),0_0_40px_rgba(0,212,255,0.15)]">
         <Image
           src={`/skills/${src}`}
           width={width}

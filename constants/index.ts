@@ -351,6 +351,7 @@ export const PROJECTS = [
     image: "/projects/project-1.png",
     link: "https://agri.techshoor.com/",
     technologies: ["Python", "TensorFlow", "FastAPI", "Docker", "Azure", "Rasterio"],
+    category: "Computer Vision",
   },
   {
     title: "Fracture Detection (MURA)",
@@ -367,6 +368,7 @@ export const PROJECTS = [
     image: "/projects/project-3.png",
     link: "https://mediscan.techshoor.com/",
     technologies: ["Python", "TensorFlow", "PyTorch", "FastAPI", "Docker", "Azure"],
+    category: "Medical AI",
   },
   {
     title: "Semantic Analysis",
@@ -383,6 +385,7 @@ export const PROJECTS = [
     image: "/projects/project-2.png",
     link: "https://github.com/azharthegeek/sentiment-analysis-roman-urdu",
     technologies: ["Python", "NLTK", "Scikit-learn", "Django"],
+    category: "NLP",
   },
 ] as const;
 

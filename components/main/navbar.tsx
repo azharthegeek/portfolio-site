@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
 
@@ -122,6 +122,7 @@ export const Navbar = () => {
                 rel="noreferrer noopener"
                 key={name}
                 aria-label={`Visit my ${name} profile`}
+                className="hover:scale-110 transition-transform duration-200"
               >
                 <Icon className="h-6 w-6 text-white hover:text-purple-400 transition-colors" />
               </Link>
@@ -142,55 +143,64 @@ export const Navbar = () => {
           </button>
         </div>
 
-        {menuOpen && (
-          <div className="md:hidden px-2 pb-4">
-            <div className="flex flex-col gap-4 border border-[#2A0E61] bg-[#0f0b1f]/80 rounded-2xl p-4 text-gray-200">
-              {NAV_LINKS.map((link) => {
-                const sectionId = link.link.replace("#", "");
-                const isActive = activeSection === sectionId;
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden px-2 pb-4 overflow-hidden"
+            >
+              <div className="flex flex-col border border-[#2A0E61] bg-[#0f0b1f]/80 rounded-2xl p-4 text-gray-200">
+                {NAV_LINKS.map((link) => {
+                  const sectionId = link.link.replace("#", "");
+                  const isActive = activeSection === sectionId;
 
-                return (
-                  <Link
-                    key={link.title}
-                    href={link.link}
-                    className={`cursor-pointer transition ${
-                      isActive
-                        ? "text-purple-400 font-medium"
-                        : "hover:text-[rgb(112,66,248)]"
-                    }`}
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {link.title}
-                  </Link>
-                );
-              })}
+                  return (
+                    <Link
+                      key={link.title}
+                      href={link.link}
+                      className={`cursor-pointer transition py-3 min-h-[44px] flex items-center ${
+                        isActive
+                          ? "text-purple-400 font-medium"
+                          : "hover:text-[rgb(112,66,248)]"
+                      }`}
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {link.title}
+                    </Link>
+                  );
+                })}
 
-              <Link
-                href={LINKS.sourceCode}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
-                onClick={() => setMenuOpen(false)}
-              >
-                Github
-              </Link>
+                <Link
+                  href={LINKS.sourceCode}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="cursor-pointer hover:text-[rgb(112,66,248)] transition py-3 min-h-[44px] flex items-center"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Github
+                </Link>
 
-              <div className="flex flex-row gap-4 pt-2">
-                {SOCIALS.map(({ link, name, icon: Icon }) => (
-                  <Link
-                    href={link}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    key={name}
-                    aria-label={`Visit my ${name} profile`}
-                  >
-                    <Icon className="h-6 w-6 text-white" />
-                  </Link>
-                ))}
+                <div className="flex flex-row gap-4 pt-2 border-t border-white/10 mt-2">
+                  {SOCIALS.map(({ link, name, icon: Icon }) => (
+                    <Link
+                      href={link}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      key={name}
+                      aria-label={`Visit my ${name} profile`}
+                      className="hover:scale-110 transition-transform duration-200"
+                    >
+                      <Icon className="h-6 w-6 text-white hover:text-purple-400 transition-colors" />
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
-          </div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* Scroll progress bar */}

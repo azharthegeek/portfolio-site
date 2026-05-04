@@ -6,6 +6,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaMedium, FaExternalLinkAlt, FaCalendarAlt } from "react-icons/fa";
 
+import { SectionHeader } from "@/components/sub/section-header";
+
 interface MediumPost {
   title: string;
   link: string;
@@ -60,14 +62,7 @@ export const Blog = () => {
         id="blog"
         className="flex flex-col items-center justify-center py-20 px-6"
       >
-        <div className="text-center max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.3em] text-purple-300">
-            Blog
-          </p>
-          <h2 className="text-[36px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mt-4">
-            Latest Articles
-          </h2>
-        </div>
+        <SectionHeader eyebrow="Blog" title="Latest Articles" />
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
           {[1, 2, 3].map((i) => (
             <div
@@ -97,21 +92,12 @@ export const Blog = () => {
       className="flex flex-col items-center justify-center py-20 px-6"
       aria-labelledby="blog-title"
     >
-      <div className="text-center max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.3em] text-purple-300">
-          Blog
-        </p>
-        <h2
-          id="blog-title"
-          className="text-[36px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mt-4"
-        >
-          Latest Articles
-        </h2>
-        <p className="text-gray-300 mt-4">
-          Thoughts on AI, machine learning, and software engineering from my
-          Medium blog.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="Blog"
+        title="Latest Articles"
+        titleId="blog-title"
+        description="Thoughts on AI, machine learning, and software engineering from my Medium blog."
+      />
 
       <motion.div
         variants={container}

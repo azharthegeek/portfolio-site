@@ -8,6 +8,7 @@ import {
   FaChartLine,
 } from "react-icons/fa";
 
+import { SectionHeader } from "@/components/sub/section-header";
 import { EXPERIENCE } from "@/constants";
 
 const ROLE_ICONS: Record<string, React.ElementType> = {
@@ -37,21 +38,12 @@ export const Experience = () => {
       className="flex flex-col items-center justify-center py-20 px-6"
       aria-labelledby="experience-title"
     >
-      <div className="text-center max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.3em] text-purple-300">
-          Career Journey
-        </p>
-        <h2
-          id="experience-title"
-          className="text-[36px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mt-4"
-        >
-          Professional Experience
-        </h2>
-        <p className="text-gray-300 mt-4">
-          From data analysis to AI engineering - a path forged through building,
-          deploying, and teaching intelligent systems.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="Career Journey"
+        title="Professional Experience"
+        titleId="experience-title"
+        description="From data analysis to AI engineering - a path forged through building, deploying, and teaching intelligent systems."
+      />
 
       <motion.div
         variants={container}
@@ -112,7 +104,7 @@ export const Experience = () => {
                     {exp.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mt-4">
+                  <div className="flex flex-wrap gap-2 mt-4 max-w-full overflow-hidden">
                     {exp.technologies.map((tech) => (
                       <span
                         key={tech}

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { FaGraduationCap, FaTrophy } from "react-icons/fa";
 
+import { SectionHeader } from "@/components/sub/section-header";
 import { EDUCATION } from "@/constants";
 
 const container = {
@@ -25,17 +26,11 @@ export const Education = () => {
       className="flex flex-col items-center justify-center py-20 px-6"
       aria-labelledby="education-title"
     >
-      <div className="text-center max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.3em] text-purple-300">
-          Academic Background
-        </p>
-        <h2
-          id="education-title"
-          className="text-[36px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mt-4"
-        >
-          Education
-        </h2>
-      </div>
+      <SectionHeader
+        eyebrow="Academic Background"
+        title="Education"
+        titleId="education-title"
+      />
 
       <motion.div
         variants={container}

@@ -16,12 +16,18 @@ const HeroVideo = dynamic(
   { ssr: false }
 );
 
+const NeuralNetwork = dynamic(
+  () => import("@/components/sub/neural-network").then((m) => ({ default: m.NeuralNetwork })),
+  { ssr: false }
+);
+
 export const Hero = () => {
   return (
     <section id="about-me" className="relative flex flex-col h-full w-full">
       <HeroVideo />
       {/* Dark overlay to improve text readability on mobile */}
       <div className="absolute inset-0 bg-[#030014]/60 md:bg-transparent -z-10 pointer-events-none" />
+      <NeuralNetwork />
       <HeroContent />
     </section>
   );
